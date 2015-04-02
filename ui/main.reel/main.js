@@ -13,5 +13,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+    words: {
+        value: null,
+    },
+    _text: {
+        value: null,
+    },
+    "text": {
+        set: function(value) {
+            this.words = value.split(" ");
+        }
     }
 });
